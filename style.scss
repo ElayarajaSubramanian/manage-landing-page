@@ -201,6 +201,9 @@ input {
     position: relative;
     left: 46%;
   }
+  &__input {
+    display: none;
+  }
 }
 .simplify {
   display: grid;
@@ -399,6 +402,33 @@ footer {
       &.active {
         background-color: $bright-red;
       }
+    }
+    &__label {
+      display: flex;
+      justify-content: center;
+      & label {
+        border: 2px solid $bright-red;
+        padding: 5px;
+        border-radius: 10px;
+        &:not(:last-child) {
+          margin-right: 5px;
+        }
+        &:hover {
+          background-color: $bright-red;
+        }
+      }
+    }
+    &__radio1:checked ~ .first {
+      margin-left: 0;
+    }
+    &__radio2:checked ~ .first {
+      margin-left: -300px !important;
+    }
+    &__radio3:checked ~ .first {
+      margin-left: -500px !important;
+    }
+    &__radio4:checked ~ .first {
+      margin-left: -300% !important;
     }
   }
   .simplify {

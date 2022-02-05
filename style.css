@@ -277,6 +277,10 @@ body, button, input {
   left: 46%;
 }
 
+.testimonial__input {
+  display: none;
+}
+
 .simplify {
   display: -ms-grid;
   display: grid;
@@ -537,6 +541,37 @@ footer {
   }
   .testimonial__indicatorbtn.active {
     background-color: #f25f3a;
+  }
+  .testimonial__label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .testimonial__label label {
+    border: 2px solid #f25f3a;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .testimonial__label label:not(:last-child) {
+    margin-right: 5px;
+  }
+  .testimonial__label label:hover {
+    background-color: #f25f3a;
+  }
+  .testimonial__radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  .testimonial__radio2:checked ~ .first {
+    margin-left: -300px !important;
+  }
+  .testimonial__radio3:checked ~ .first {
+    margin-left: -500px !important;
+  }
+  .testimonial__radio4:checked ~ .first {
+    margin-left: -300% !important;
   }
   .simplify {
     -ms-grid-columns: 100%;
